@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #ececec, #dde2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+
+.exchanger, .calculator {
+    background: #1c1c1c;
+    color: #fff;
+    border-radius: 8px; /* Rectangular shape */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 350px;
+    min-width: 300px; /* Minimum width for smaller screens */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700;
+}
+
+
+.exchanger .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#exchange-result {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffd700;
+}
+
+
+#calc-display {
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #ffd700;
+    color: #000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ffc700;
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center;
+        gap: 40px;
+    }
+
+    .exchanger, .calculator {
+        width: 100%;
+        max-width: 500px; /* Max width for better mobile experience */
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    #calc-display {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    #calc-display {
+        font-size: 1.3rem;
+    }
+}
