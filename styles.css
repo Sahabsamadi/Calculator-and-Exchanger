@@ -21,7 +21,7 @@ body {
 .exchanger, .calculator {
     background: #1c1c1c;
     color: #fff;
-    border-radius: 8px; /* Rectangular shape */
+    border-radius: 50px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 350px;
