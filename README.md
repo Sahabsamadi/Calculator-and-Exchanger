@@ -29,3 +29,12 @@ Use the calculator to perform basic and advanced mathematical calculations.
 The calculator automatically updates the result as you press buttons without needing to click a separate 'Convert' button.
 Installation:
 Clone this repository and open index.html in your browser to start using the app.
+## 🤝 Contribution
+Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request.
+
+## 📧 Contact
+- **Developer:** Sahab Samadi
+- **Email:** sahabsamadi2000@gmail.com
+
+## 📜 License
+*****xxxx****
